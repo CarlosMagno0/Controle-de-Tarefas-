@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Controle de Estoque</title>
+  <link rel="stylesheet" href="css.css">
+</head>
+<body class="controle">
+  <div class="sidebar">
+    <ul>
+      <li><a href="index.html">Menu Principal</a></li>
+      <li><a href="presencial.html">Presencial</a></li>
+      <li><a href="home.html">Home Office</a></li>
+      <li><a href="tarefas.html">Tarefas Semanais</a></li>
+      <li><a href="controle.html" class="active">Pedidos de Tonner</a></li>
+      <li><a href="demandas.html">Demandas TI</a></li>
+    </ul>
+  </div>
+
+  <div class="content">
+    <h1>Controle de Estoque</h1>
+    <div class="form">
+      <input type="text" id="produto" placeholder="Produto">
+      <input type="number" id="quantidade" placeholder="Quantidade">
+      <input type="text" id="filial" placeholder="Filial">
+      <input type="date" id="dataEntrada">
+      <input type="date" id="dataSaida">
+      <button id="btnAdicionar">Adicionar</button>
+    </div>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Produto</th>
+          <th>Quantidade</th>
+          <th>Filial</th>
+          <th>Pedido</th>
+          <th>Entregue</th>
+          <th>Ação</th>
+        </tr>
+      </thead>
+      <tbody id="lista-produtos"></tbody>
+    </table>
+  </div>
+
+  <div id="loading-screen">
+    <div class="loader"></div>
+    <p>Adicionando produto...</p>
+  </div>
+
+  <script src="js.js"></script>
+</body>
+</html>

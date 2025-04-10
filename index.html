@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Menu Principal</title>
+  <link rel="stylesheet" href="inicio.css">
+  <link rel="stylesheet" href="css.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <div class="container">
+    <aside class="sidebar">
+      <a href="index.html" class="menu-link active">Menu Principal</a>
+      <a href="presencial.html" class="menu-link">Presencial</a>
+      <a href="homeoffice.html" class="menu-link">Home Office</a>
+      <a href="controle.html" class="menu-link">Controle de Estoque</a>
+      <a href="tarefas.html" class="menu-link">Tarefas</a>
+      <a href="demandas.html" class="menu-link">Demandas</a>
+      <a href="tonner.html" class="menu-link">Pedidos de Tonner</a>
+    </aside>
+
+    <main class="main">
+      <h1>Adicionar Tarefa</h1>
+      <div class="adicionar-tarefa">
+        <input type="text" id="descricao" placeholder="Descrição da tarefa">
+        <select id="status">
+          <option value="a-fazer">A Fazer</option>
+          <option value="em-andamento">Em Andamento</option>
+          <option value="concluido">Concluído</option>
+        </select>
+        <select id="destino">
+          <option value="Menu Principal">Menu Principal</option>
+          <option value="Presencial">Presencial</option>
+          <option value="Home Office">Home Office</option>
+        </select>
+        <button id="adicionar">Adicionar</button>
+      </div>
+
+      <div class="listas">
+        <div class="coluna" id="a-fazer">
+          <h2>A Fazer</h2>
+          <ul></ul>
+        </div>
+        <div class="coluna" id="em-andamento">
+          <h2>Em Andamento</h2>
+          <ul></ul>
+        </div>
+        <div class="coluna" id="concluido">
+          <h2>Concluído</h2>
+          <ul></ul>
+        </div>
+      </div>
+
+      <h2>Resumo Mensal de Tarefas</h2>
+      <canvas id="graficoTarefas" width="400" height="200"></canvas>
+    </main>
+  </div>
+
+  <script src="inicio.js"></script>
+  <script src="js.js"></script>
+</body>
+</html>

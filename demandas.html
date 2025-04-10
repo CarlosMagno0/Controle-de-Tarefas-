@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Demandas TI</title>
+  <link rel="stylesheet" href="css.css">
+  <link rel="stylesheet" href="demandas.css">
+</head>
+<body>
+  <div class="sidebar">
+    <ul>
+      <li><a href="index.html">Menu Principal</a></li>
+      <li><a href="presencial.html">Presencial</a></li>
+      <li><a href="home.html">Home Office</a></li>
+      <li><a href="tarefas.html">Tarefas Semanais</a></li>
+      <li><a href="controle.html">Pedidos de Tonner</a></li>
+      <li><a href="demandas.html" class="active">Demandas TI</a></li>
+    </ul>
+  </div>
+
+  <div class="container">
+    <h1>Registro de Demandas de TI</h1>
+    <div class="form">
+      <input type="text" id="demanda" placeholder="Descreva a demanda">
+      <select id="prioridade">
+        <option value="Baixa">Baixa</option>
+        <option value="Média">Média</option>
+        <option value="Alta">Alta</option>
+      </select>
+      <button id="adicionar">Adicionar</button>
+    </div>
+
+    <div class="lista" id="lista-demandas"></div>
+  </div>
+
+  <script src="demandas.js"></script>
+</body>
+</html>

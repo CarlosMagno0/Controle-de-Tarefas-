@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Presencial</title>
+  <link rel="stylesheet" href="css.css" />
+  <link rel="stylesheet" href="presencial.css" />
+</head>
+<body>
+  <div class="sidebar">
+    <ul>
+      <li><a href="index.html">Menu Principal</a></li>
+      <li><a href="presencial.html" class="active">Presencial</a></li>
+      <li><a href="home.html">Home Office</a></li>
+      <li><a href="tarefas.html">Tarefas Semanais</a></li>
+      <li><a href="controle.html">Pedidos de Tonner</a></li>
+      <li><a href="demandas.html">Demandas TI</a></li>
+    </ul>
+  </div>
+
+  <div class="content">
+    <h1>Registro de Atividades Presenciais</h1>
+    <div class="form">
+      <input type="text" id="atividade-presencial" placeholder="Digite a atividade presencial" />
+      <button onclick="adicionarAtividadePresencial()">Adicionar</button>
+    </div>
+    <ul id="lista-presencial" class="lista-atividades"></ul>
+  </div>
+
+  <script src="presencial.js"></script>
+</body>
+</html>
